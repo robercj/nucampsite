@@ -1,52 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--BEGIN HEAD-->
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<!--META DATA-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+<!--BOOTSTRAP-->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+crossorigin="anonymous"
+/>
 
-    <title>NuCamp: A Better Way To Camp</title>
+<!--FONT IMPORTS-->
+<link
+href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+rel="stylesheet"
+/>
+<link 
+rel="stylesheet" 
+href="node_modules/font-awesome/css/font-awesome.min.css" />
+<link 
+rel="stylesheet" 
+href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+<!--CUSTOM CSS-->
+<link 
+rel="stylesheet" 
+href="css/styles.css" />
+
+<!--END IMPORTS-->
+
+<!--TITLE-->
+<title>NuCamp: A Better Way To Camp</title>
 </head>
+<!--END HEAD-->
 
+<!--BEGIN BODY-->
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
-                </div>
-            </div>
+<!--JUMBOTRON-->
+<header class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>NuCamp</h1>
+          <h2>a better way to camp</h2>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
+<!--JUMBO TRON-->
 
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-sm navbar-light sticky-top">
+    <div class="container">
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nucampNavbar4"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="#nucampNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-home fa-lg"></i> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"
+              ><i class="fa fa-info fa-lg"></i> About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa fa-list fa-lg"></i> Sites</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html"
+              ><i class="fa fa-address-card fa-lg"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--NAVBAR-->
 
+<!--BREADCRUMB-->
     <div class="container">
         <div class="row">
             <div class="col">
@@ -58,7 +107,9 @@
                 <hr />
             </div>
         </div>
+<!--BREADCRUMB-->
 
+<!--CONTENT-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4">
                 <h5>Our Address</h5>
@@ -134,10 +185,12 @@
                 </form>
             </div>
        </div>
-
     </div>
+<!--CONTENT-->
 
-    <footer>
+
+<!--FOOTER-->
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
@@ -163,12 +216,12 @@
            </div>
         </div>
     </footer>
+<!--FOOTER-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
-
+<!--END BODY-->
 </html>
