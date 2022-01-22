@@ -44,6 +44,9 @@
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div>
+          <div class="mt-4 col-md-4 col-xl-2">
+            <a class="btn btn-lg btn-info text-nowrap" href="#reserveForm">Reserve Campsite</a>
+          </div>
         </div>
       </div>
     </header>
@@ -110,13 +113,16 @@
         <div class="col-sm-4 col-md-3">
           <h2>Featured Campsites</h2>
         </div>
-        <div class="col">
+        <div class="col media-body">
           <h3>React Lake Campground</h3>
-          <p>
+          <p class="d-none d-sm-block">
             Nestled in the foothills of the Chrome Mountains, this campground on
             the shores of the pristine React Lake is a favorite for fly fishers.
           </p>
         </div>
+
+          <img class="img-thumbnail d-flex ml-3" src="img/react-lake-thumb.jpg" alt="reactlake">
+
       </div>
 
       <div class="row row-content align-items-center">
@@ -133,6 +139,49 @@
           </div>
       </div>
     </div>
+<!--FORM BEGIN-->
+      <div class="row row-content">
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info">Reserve a Campsite</h3>
+            <div class="card-body">
+            <form id="reserveForm">
+              <div class="row form-group">
+                <label class="col-form-label col-sm-6">
+                  Number of Campers
+                </label>
+                <div class="col">
+                  <select class="form-control" name="numCampers" id="numCampers">
+                    <option value="">Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                    <label class="col-form-label col-sm-6" for="date">Date</label>                   
+                  <div class="col-sm-6">
+                    <input class="form-control" type="date" name="date" id="date" placeholder="1/22/2022">                    
+                  </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--CONTENT-->
 
     <!--FOOTER-->
