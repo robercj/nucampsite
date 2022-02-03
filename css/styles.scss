@@ -48,3 +48,10 @@ header {
 .carousel-caption {
     background-color: $color-black-transparent;
 }
+
+#carouselButton {
+  position:absolute;
+  right:0;
+  bottom:0;
+  z-index: 100;
+}

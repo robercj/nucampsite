@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "start": "npm run lite",
-    "scss": "node-sass -o css/ css/"
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+   "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Caleb Robertson",
   "license": "ISC",
@@ -16,7 +18,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "lite-server": "^2.6.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
